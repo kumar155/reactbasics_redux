@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MyComponent from './mycomponent';
 
 export default class Child extends Component {
     constructor(props) {
@@ -21,6 +22,8 @@ export default class Child extends Component {
         return (
             <div style={{ marginLeft: 100 }}>
                 <div>Children: {this.props.counter}</div>
+                <MyComponent/>
+                <div></div>
             </div>
         );
     }
